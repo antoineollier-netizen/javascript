@@ -12,6 +12,11 @@ function toggleCompetences() {
   compSection.style.display =
     compSection.style.display === 'none' ? 'block' : 'none';
 }
+  function toggleformation() {
+  const compSection = document.getElementById('formation');
+  compSection.style.display =
+    compSection.style.display === 'none' ? 'block' : 'none';
+}
 </script>
 
   <header>
@@ -20,17 +25,20 @@ function toggleCompetences() {
     <p>Contact : email@example.com</p>
   </header>
   <main>
-    <section>
-      <h2>Formation</h2>
+    <h2 onclick="toggleformation()">Formation</h2>
+    <section id="formation">
       <ul>
         <li>BTS SIO – Lycée X</li>
       </ul>
     </section>
-    <button onclick="toggleCompetences()">Compétences</button>
+    <button>Compétences</button>
+   <h2 onclick="toggleCompetences()">Compétences</h2>
     <section id="competences">
-      <h2>Compétences</h2>
       <ul>
-        <li>HTML, CSS, JavaScript</li>
+        <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+
       </ul>
     </section>
   </main>
